@@ -6,10 +6,10 @@ export default function App() {
     let rows = [];
     for (let i = 1; i <= n; i++) {
       for (let j = 1; j <= n - i; j++) {
-        rows.push(<tw>&nbsp; &nbsp; &nbsp;</tw>); // three space
+        rows.push(<>&nbsp; &nbsp; &nbsp;</>); // three space
       }
       for (let k = 0; k < 2 * i - 1; k++) {
-        rows.push(<tw>😍</tw>);
+        rows.push(<>😍</>);
       }
       rows.push(<tr></tr>);
     }
